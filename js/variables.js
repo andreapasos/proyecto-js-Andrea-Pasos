@@ -1,3 +1,2 @@
-const productos = ["aspirinetas" , "bayaspirina" , "aziatop" , "regulacid" , "treg" , "geniol 1g" , "caramelos fecofar" , "gripaben" , "bengue"]
+const productos = ["Aspirinetas" , "Bayaspirina" , "Aziatop" , "Regulacid" , "Treg" , "Geniol 1g" , "Caramelos fecofar" , "Bengue"]
 const carrito = []
-const prod = []

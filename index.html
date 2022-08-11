@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es">
+<head> 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Funciones OS - Productos Farmacia D</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="estilos.css">
     <script src="js/variables.js"></script>
-    <title>Document JS</title>
+    <script src="js/index.js"></script>
+    <script src="js/arrayproduct.js"></script>
+    <script src="js/prod.class.js"></script>
+    <script src="prod.html"></script>
 </head>
 <body>
-    <title>Documento js</title>
+    <article class="container">
+        <div class="parent">
+            <div>
+                <label for="selectProducto">Producto</label>
+                <select id="selectProducto" name="selectProducto">
+                    <option value="" selected disabled>...</option> -->
+                    <option value="">Aspirineta</option>
+                    <option value="">Bayaspirina</option>
+                    <option value="">Aziatop</option>
+                    <option value="">Regulacid</option>
+                    <option value="">Treg</option>
+                    <option value="">Geniol 1G</option>
+                    <option value="">Caramelos Fecofar</option>
+                    <option value="">Bengue</option>
+
+                </select>
+            </div>
+            <footer>
+                <button class="button" onclick="listarProductos()">LISTAR Productos</button>
+                <button class="button button-grey" onclick="agregarProducto()">AGREGAR PRODUCTO</button>
+                <button class="button button-outline" onclick="buscarProducto()">BUSCAR PRODUCTO</button>
+                <button class="button button-delete" onclick="quitarProducto()">QUITAR PRODUCTO</button>
+            </footer>
+        </div>
+    </article>
 </body>
 </html>
