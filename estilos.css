@@ -16,3 +16,7 @@ body {
     background-color: slategray !important;
     color: white !important;
 }
+
+.fondo-verde{
+    background-color: rgb(6, 246, 6);
+}

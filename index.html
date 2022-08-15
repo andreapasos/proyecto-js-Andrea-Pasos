@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
     <link rel="stylesheet" href="estilos.css">
-    <script src="js/variables.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/arrayproduct.js"></script>
     <script src="js/prod.class.js"></script>
     <script src="prod.html"></script>
+    <script src="js/arrays.js"></script>
+    <script defer src="js/variables.js"></script>
 </head>
 <body>
+    <h1 id = "titulo">Bienvenidos a Farmacia D</h1>
+    <p id = "parrafo"> Ofertas</p>
     <article class="container">
         <div class="parent">
             <div>
@@ -30,6 +32,9 @@
 
                 </select>
             </div>
+              <ul id = "lista">
+                
+              </ul>
             <footer>
                 <button class="button" onclick="listarProductos()">LISTAR Productos</button>
                 <button class="button button-grey" onclick="agregarProducto()">AGREGAR PRODUCTO</button>

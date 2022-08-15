@@ -38,8 +38,8 @@ function recorrerElementos() {
 
 function recorrerProductos() {
     //debugger//
-    productos.forEach(elemento => {
-        console.table(elemento)
+    productos.forEach(producto => {
+        console.table(producto)
     })
 }
 
@@ -85,7 +85,7 @@ function calcularCarrito() {
 function ordenarProductos() {
     console.clear()
     console.table(productos)
-    debugger
+    //debugger
     productos.sort((a, b) => {
         if (a.importe > b.importe) {
             return 1
@@ -97,3 +97,18 @@ function ordenarProductos() {
     })
     console.table(productos)
 }
+
+function cargarTablaProductos(){
+    const cuerpo = document.getElementById("cuerpo")
+    productos.forEach(producto=>{
+        cuerpo.innerHTML += `<tr>
+        <td>${producto.id}</td>
+        <td>${producto.nombre}</td>
+        <td>${producto.importe}</td>
+    </tr>`
+})
+}
+
+
+
+
