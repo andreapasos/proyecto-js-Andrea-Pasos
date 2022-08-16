@@ -1,36 +1,3 @@
-const titulo = document.getElementById("titulo")
-const parrafo = document.getElementById("parrafo")
-const botonGris = document.getElementsByClassName("button-grey")
-const botones = document.getElementsByClassName("button")
-const buttons = document.getElementsByTagName("button")
-
-function textoDdeBotones(){
-    for (let boton of buttons) {
-        console.log(boton.innerText)
-    }
-}
-
-function cambiarEncabezado(){
-    titulo.innerText = "Ofertas Farmacia D"
-    titulo.className = "fondo-verde"
-    parrafo.innerText = "Elija ofertas"
-}
-
-
-crearLista()
-
-const lista = document.getElementById("lista")
-
-function crearLista() {
- 
-    productos.forEach(producto => {
-            //debugger
-            const li = document.createElement("li")
-                  li.innerText = producto
-                  lista.append(li)
-                })
-            }
-    crearLista()        
 
 
     function listarProductos() {
@@ -61,3 +28,13 @@ function crearLista() {
             console.error("No se ha encontrado el producto", aQuitar)
         }
     }
+
+    const botonListar = document.querySelector(".button")
+    const botonAgregar = document.querySelector(".button.button-grey")
+    const botonBuscar = document.querySelector(".button.button-outline")
+    const botonQuitar = document.querySelector(".button.button-delete")
+
+botonListar.addEventListener("click", listarProductos)
+botonAgregar.addEventListener("click", agregarProducto)
+botonBuscar.addEventListener("click", buscarProducto)
+botonQuitar.addEventListener("click", quitarProducto)
