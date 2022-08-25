@@ -1,40 +1,20 @@
-const producto = ['Aspirinetas' , 'Bayaspirina' , 'Aziatop' , 'Regulacid' , 'Treg' , 'Geniol 1g' , 'Caramelos Fecofar', 'Bengue']
-const carrito = []
-
-const titulo = document.getElementById("titulo")
-const parrafo = document.getElementById("parrafo")
-
-
-const selectProductos = document.querySelector("select")
+const prodPerf = document.querySelector("#productop")
+const prodFarm = document.querySelector("#productof")
+const btnCotizar = document.querySelector("button")
+const precio = document.querySelector("span")
 
 
-function textoDeBotones() { //debugger
-    for (boton of buttons) {
-        console.log(boton.innerText)
-    }
-}
+const datosprodPerf =  [{tipo: 'Gillette Maquina', factor: 568},
+                        {tipo: 'Gillette Gel', factor: 536},
+                        {tipo: 'Impulse Desodorante', factor: 366},
+                        {tipo: 'Sedal Shampoo', farctor: 255},
+                        {tipo: 'Lux Jabon liquido', factor: 250},]
+        
 
-function crearLista() {
-    const ul = document.getElementById("lista")
-          ul.innerHTML = "<li>Elemento 1</li><li>Elemento 2</li>"
-}   
-
-
-function cambiarFondo() {
-    parrafo.className = "fondo-verde"
-
-}
-
-
-function cargarProductos() {
-    //debugger
-    const selectProducto = document.getElementById("selectProducto")
-          selectProducto.innerHTML = ""
-          productos.forEach(producto => {
-            const option = document.createElement("option")
-                  option.innerText = producto
-                  selectProducto.append(option)
-          })
-}
-
-
+const datosprodFarm =  [{tipo: 'Treg Omeprazol', factor: 180},
+                        {tipo: 'Caramelos Fecofar', factor: 300},
+                        {tipo: 'Tafirol 500mg x 30 comprimidos', factor: 360},]
+                
+                
+                        const desc1 = 0.3     
+                    
