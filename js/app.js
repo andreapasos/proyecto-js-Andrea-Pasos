@@ -34,4 +34,15 @@ const realizarCotizacion = ()=> {
 }
 
 
+
 btnCotizar.addEventListener("click", realizarCotizacion)
+
+
+
+const sa = ()=>{
+   Swal.fire({
+      title: 'Do you want to continue',
+      icon: 'error',
+      confirmButtonText: 'Cool'
+  })
+}

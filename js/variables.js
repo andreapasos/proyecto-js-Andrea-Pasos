@@ -17,4 +17,4 @@ const datosprodFarm =  [{tipo: 'Treg Omeprazol', factor: 180},
                 
                 
                         const desc1 = 0.3     
-                    
+                                           
