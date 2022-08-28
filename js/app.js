@@ -37,12 +37,12 @@ const realizarCotizacion = ()=> {
 
 btnCotizar.addEventListener("click", realizarCotizacion)
 
+if (carrito.length === 0) {
+    console.log("El carrito está vacío!")
+  }
+  
+  
+  carrito.length === 0 && console.log("El carrito está vacío!")
 
 
-const sa = ()=>{
-   Swal.fire({
-      title: 'Do you want to continue',
-      icon: 'error',
-      confirmButtonText: 'Cool'
-  })
-}
+                                           

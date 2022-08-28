@@ -16,5 +16,9 @@ const datosprodFarm =  [{tipo: 'Treg Omeprazol', factor: 180},
                         {tipo: 'Tafirol 500mg x 30 comprimidos', factor: 360},]
                 
                 
-                        const desc1 = 0.3     
-                                           
+                        const desc1 = 0.3  
+                        
+                        
+                        const carrito = []
+
+                                              
