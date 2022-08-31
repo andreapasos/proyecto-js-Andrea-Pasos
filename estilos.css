@@ -42,7 +42,7 @@ select, input {
     margin: 20px;
 }
 
-.precio {
+.importe {
     color: blueviolet;
     font-size: x-large;
     font-weight: 700;

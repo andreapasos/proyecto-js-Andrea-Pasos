@@ -1,8 +1,8 @@
 const prodPerf = document.querySelector("#productop")
 const prodFarm = document.querySelector("#productof")
 const btnCotizar = document.querySelector("button")
-const precio = document.querySelector("span")
-
+const importe = document.querySelector("span")
+const btnEnviar = document.querySelector("span.guardar")
 
 const datosprodPerf =  [{tipo: 'Gillette Maquina', factor: 568},
                         {tipo: 'Gillette Gel', factor: 536},
